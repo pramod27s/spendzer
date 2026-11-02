@@ -1,0 +1,44 @@
+# System default categories. Colors are slots of the validated categorical palette
+# (light-mode hex; the frontend swaps in the matching dark step). The eight most common
+# spending categories hold distinct slots; rarer ones reuse a hue and fold into "Rest" in charts.
+# blue #2a78d6 | orange #eb6834 | aqua #1baf7a | yellow #eda100
+# magenta #e87ba4 | green #008300 | violet #6250d6 | red #e34948 | neutral #898781
+
+fixed:
+  - { name: Rent, icon: home, color: "#2a78d6" }
+  - { name: EMI & Loans, icon: landmark, color: "#e34948" }
+  - { name: Subscriptions, icon: repeat, color: "#6250d6" }
+  - { name: Mobile & Internet, icon: smartphone, color: "#008300" }
+  - { name: Education, icon: graduation-cap, color: "#2a78d6" }
+
+variable:
+  - { name: Groceries, icon: shopping-basket, color: "#1baf7a" }
+  - { name: Transport, icon: bus, color: "#eda100" }
+  - { name: Fuel, icon: fuel, color: "#eda100" }
+  - { name: Utilities, icon: zap, color: "#008300" }
+  - { name: Health, icon: heart-pulse, color: "#e34948" }
+  - { name: Fees & Charges, icon: receipt, color: "#e34948" }
+  # For small UPI payments to people you can't place (autos, tea stalls, corner shops).
+  - { name: Small Spends, icon: coins, color: "#e87ba4" }
+
+discretionary:
+  - { name: Food & Dining, icon: utensils, color: "#eb6834" }
+  - { name: Shopping, icon: shopping-bag, color: "#e87ba4" }
+  - { name: Entertainment, icon: clapperboard, color: "#6250d6" }
+  - { name: Personal Care, icon: sparkles, color: "#e87ba4" }
+  - { name: Travel, icon: plane, color: "#1baf7a" }
+  - { name: Gifts & Donations, icon: gift, color: "#eb6834" }
+  - { name: Other, icon: circle-dashed, color: "#898781" }
+
+income:
+  - { name: Salary, icon: briefcase, color: "#1baf7a" }
+  - { name: Stipend, icon: award, color: "#2a78d6" }
+  - { name: Pocket Money, icon: wallet, color: "#6250d6" }
+  - { name: Freelance, icon: laptop, color: "#eb6834" }
+  - { name: Interest, icon: percent, color: "#008300" }
+  - { name: Other Income, icon: circle-plus, color: "#898781" }
+
+excluded:
+  - { name: Self Transfer, icon: arrow-left-right, color: "#898781" }
+  - { name: Investment, icon: trending-up, color: "#2a78d6" }
+  - { name: Refund, icon: undo-2, color: "#1baf7a" }

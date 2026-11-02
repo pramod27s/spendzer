@@ -1,0 +1,36 @@
+# Global keyword rules (user_id = NULL). `contains` matches whole words in
+# "merchant + raw narration", lowercased. Lower priority number wins; among equal
+# priorities the longer keyword wins ("instamart" beats "swiggy").
+
+Food & Dining: [swiggy, zomato, dominos, mcdonald, mcdonalds, kfc, starbucks, cafe, restaurant,
+  eatclub, burger king, pizza hut, chaayos, haldiram, box8, faasos, eatsure, behrouz, bakery,
+  bakers, food corner, food court, biriyani, biryani, kabab, kebab, khaana, khana, dosa, dose,
+  idli, darshini, tiffin, tiffins, canteen, mess, chaat, juice, chai, tea, tea stall, sweets,
+  justvend]
+Groceries: [blinkit, zepto, bigbasket, instamart, swiggy instamart, dmart, more retail, jiomart,
+  grofers, nature's basket, ratnadeep, spencers, supermarket, kirana, general stores, stores,
+  provision, provisions, dairy, milk, nandini, fruits, vegetables, mart]
+Transport: [uber, ola, rapido, namma metro, bmtc, irctc, redbus, metro rail, best bus, ksrtc,
+  fastag, parking, bangalore metro, bmrcl, depot manager, metro]
+Fuel: [petrol, hpcl, bpcl, indian oil, iocl, shell, fuel, petroleum]
+Shopping: [amazon, flipkart, myntra, ajio, meesho, nykaa, tata cliq, decathlon, croma,
+  reliance digital, ikea, lenskart, firstcry, ekart, delhivery]
+Subscriptions: [netflix, spotify, hotstar, prime video, youtube premium, apple.com, google play,
+  jiocinema, sonyliv, zee5, audible, chatgpt, openai, notion, icloud]
+Mobile & Internet: [airtel, jio, vi, vodafone, act fibernet, recharge, bsnl, hathway, excitel,
+  postpaid, prepaid, broadband]
+Utilities: [bescom, electricity, bwssb, water, gas, indane, bharat gas, hp gas, tata power,
+  adani electricity, msedcl, piped gas]
+Entertainment: [bookmyshow, pvr, inox, steam, playstation, district, paytm insider, cinepolis]
+Health: [pharmacy, apollo, 1mg, pharmeasy, hospital, clinic, medplus, netmeds, practo, diagnostics,
+  cult.fit, cultfit]
+Education: [udemy, coursera, college, university, fees, school, unacademy, byjus, tuition,
+  exam fee]
+EMI & Loans: [emi, bajaj finance, loan, ach d, home credit, nach debit, kreditbee, slice]
+Fees & Charges: [charges, gst on, sms alert, annual fee, penalty, late fee, processing fee,
+  maintenance charge, convenience fee]
+Personal Care: [salon, spa, urban company, barber, grooming]
+Travel: [makemytrip, goibibo, cleartrip, indigo, air india, akasa, vistara, oyo, airbnb, ixigo,
+  booking.com]  # not "hotel": many Indian restaurants are named "Hotel ..."
+Gifts & Donations: [donation, charity, charitable, temple, gift, giftcard]
+Rent: [rent, house rent, nobroker rent, pg rent]

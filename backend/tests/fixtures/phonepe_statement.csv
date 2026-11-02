@@ -1,0 +1,18 @@
+Transaction Statement for 9000000001
+Duration,"01 Nov, 2026 - 12 Nov, 2026"
+
+Date,Time,Transaction Details,Transaction ID,UTR,Transaction Type,Credit/debit instrument,Amount
+"Nov 12, 2026","07:23 pm","Paid to RAVI  KUMAR","T2611121923000000000001","402918390001","DEBIT","Paid by XXXXXX4321","78"
+"Nov 11, 2026","06:27 pm","Paid to Bangalore Metro Rail Corporation Ltd","T2611111827000000000002","402918390002","DEBIT","Paid by XXXXXX4321","30"
+"Nov 10, 2026","05:44 pm","Received from MEERA  NAIR","T2611101744000000000003","402918390003","CREDIT","Credited to XXXXXX4321","700"
+"Nov 09, 2026","11:00 am","Paid to Redbus India Private Limited","T2611091100000000000004","402918390004","DEBIT","Paid by XXXXXX4321","315"
+"Nov 08, 2026","06:58 pm","Paid to Lakshmi general stores","T2611081858000000000005","047712986349","DEBIT","Paid by XXXXXX4321","70"
+"Nov 07, 2026","08:29 pm","Paid to Akka💗","T2611072029000000000006","402918390006","DEBIT","Paid by XXXXXX4321","500"
+"Nov 06, 2026","09:31 am","Paid to MOTHER DAIRY 712","T2611060931000000000007","402918390007","DEBIT","Paid by XXXXXX4321","25"
+"Nov 05, 2026","03:39 pm","Paid to Food1","T2611051539000000000008","402918390008","DEBIT","Paid by XXXXXX4321","140"
+
+This is an automatically generated statement. Customer(s) are requested to immediately notify PhonePe in case
+of any errors in the statement, and visit the PhonePe website for Terms & Conditions and Privacy Policy.
+
+Disclaimer : Do not fall prey to fictitious offers of winning prizes, money circulation schemes and cheap funds,
+etc. through SMS, emails and calls. (anonymized test fixture)

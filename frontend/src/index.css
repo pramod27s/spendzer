@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Design tokens ----------
+   Warm-neutral paper surfaces, ink text, one teal brand accent.
+   Chart series + status colours come from the validated data-viz palette. */
+:root {
+  --background: #f7f7f5;
+  --surface: #fcfcfb;
+  --surface-2: #f1f1ee;
+  --surface-3: #e9e8e3;
+  --border: #e4e3dd;
+  --border-strong: #d3d2ca;
+  --text: #0b0b0b;
+  --text-2: #52514e;
+  --text-3: #898781;
+  --primary: #111110;
+  --primary-fg: #fafaf9;
+  --brand: #0e7c66;
+  --brand-fg: #ffffff;
+  --brand-soft: #e2f1ec;
+  --brand-ink: #0a5c4c;
+  --ring: rgba(14, 124, 102, 0.35);
+  --good: #0ca30c;
+  --good-ink: #006300;
+  --good-soft: #e5f4e4;
+  --warning: #fab219;
+  --warning-ink: #8a5a00;
+  --warning-soft: #fdf3dc;
+  --critical: #d03b3b;
+  --critical-ink: #b42f2f;
+  --critical-soft: #fbe8e6;
+  --grid: #e1e0d9;
+  --axis: #c3c2b7;
+  --shadow-color: 30 25 10;
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-5: #e87ba4;
+  --series-6: #008300;
+  --series-7: #6250d6;
+  --series-8: #e34948;
+  --series-muted: #b9b8b0;
+  color-scheme: light;
+}
+
+.dark {
+  --background: #0d0d0d;
+  --surface: #161615;
+  --surface-2: #1f1f1d;
+  --surface-3: #2a2a27;
+  --border: #2a2a28;
+  --border-strong: #3a3a36;
+  --text: #f0efec;
+  --text-2: #c3c2b7;
+  --text-3: #898781;
+  --primary: #f0efec;
+  --primary-fg: #0d0d0d;
+  --brand: #2fbf9b;
+  --brand-fg: #04211a;
+  --brand-soft: rgba(47, 191, 155, 0.13);
+  --brand-ink: #5fd9b8;
+  --ring: rgba(47, 191, 155, 0.4);
+  --good: #0ca30c;
+  --good-ink: #3ccf3c;
+  --good-soft: rgba(12, 163, 12, 0.14);
+  --warning: #fab219;
+  --warning-ink: #fac555;
+  --warning-soft: rgba(250, 178, 25, 0.13);
+  --critical: #d03b3b;
+  --critical-ink: #f07878;
+  --critical-soft: rgba(208, 59, 59, 0.16);
+  --grid: #2c2c2a;
+  --axis: #383835;
+  --shadow-color: 0 0 0;
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --series-5: #d55181;
+  --series-6: #008300;
+  --series-7: #9085e9;
+  --series-8: #e66767;
+  --series-muted: #4a4a46;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-text: var(--text);
+  --color-text-2: var(--text-2);
+  --color-text-3: var(--text-3);
+  --color-primary: var(--primary);
+  --color-primary-fg: var(--primary-fg);
+  --color-brand: var(--brand);
+  --color-brand-fg: var(--brand-fg);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-ink: var(--brand-ink);
+  --color-good: var(--good);
+  --color-good-ink: var(--good-ink);
+  --color-good-soft: var(--good-soft);
+  --color-warning: var(--warning);
+  --color-warning-ink: var(--warning-ink);
+  --color-warning-soft: var(--warning-soft);
+  --color-critical: var(--critical);
+  --color-critical-ink: var(--critical-ink);
+  --color-critical-soft: var(--critical-soft);
+
+  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+
+  --shadow-card: 0 1px 2px rgb(var(--shadow-color) / 0.04), 0 1px 1px rgb(var(--shadow-color) / 0.03);
+  --shadow-pop: 0 12px 32px -8px rgb(var(--shadow-color) / 0.18), 0 2px 6px rgb(var(--shadow-color) / 0.06);
+  --shadow-lift: 0 24px 64px -16px rgb(var(--shadow-color) / 0.22), 0 4px 12px rgb(var(--shadow-color) / 0.06);
+
+  --animate-fade-up: fade-up 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-fade-in: fade-in 0.25s ease-out both;
+  --animate-shimmer: shimmer 1.6s linear infinite;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes shimmer {
+  from { background-position: -400px 0; }
+  to { background-position: 400px 0; }
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background: var(--background);
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection {
+    background: var(--brand-soft);
+    color: var(--text);
+  }
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .bg-dots {
+    background-image: radial-gradient(var(--border-strong) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  .skeleton {
+    background: linear-gradient(90deg, var(--surface-2) 0, var(--surface-3) 50%, var(--surface-2) 100%);
+    background-size: 800px 100%;
+    animation: var(--animate-shimmer);
+  }
+}
+
+/* Recharts: keep focus outlines off SVG paths (we provide our own hover states). */
+.recharts-wrapper *:focus {
+  outline: none;
+}
